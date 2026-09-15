@@ -1,473 +1,796 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-CA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Best Real Estate Agents in Markham, Ontario | MarkhamRealtors.com</title>
-  <meta name="description" content="Compare highly rated real estate agents and teams based in Markham, Ontario. Rankings are refreshed weekly using transparent local business signals.">
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-  <meta name="theme-color" content="#0b6f49">
-  <link rel="canonical" href="https://markhamrealtors.com/">
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Real Estate Agents in Markham | MarkhamRealtors.com</title>
+  <meta
+    name="description"
+    content="Discover top real estate agents in Markham, Ontario. Explore weekly updated rankings, specialties, reviews and contact links for local Markham realtors."
+  />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://markhamrealtors.com/" />
 
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_CA">
-  <meta property="og:site_name" content="MarkhamRealtors.com">
-  <meta property="og:title" content="Best Real Estate Agents in Markham, Ontario">
-  <meta property="og:description" content="A transparent, weekly refreshed directory of highly rated real estate agents and teams with a local business presence in Markham.">
-  <meta property="og:url" content="https://markhamrealtors.com/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Best Real Estate Agents in Markham, Ontario">
-  <meta name="twitter:description" content="Compare Markham real estate agents using transparent local business signals, refreshed weekly.">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Best Real Estate Agents in Markham" />
+  <meta
+    property="og:description"
+    content="A modern local directory featuring top-rated real estate agents in Markham, Ontario."
+  />
+  <meta property="og:url" content="https://markhamrealtors.com/" />
+  <meta property="og:site_name" content="MarkhamRealtors.com" />
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://markhamrealtors.com/#website",
-        "url": "https://markhamrealtors.com/",
-        "name": "MarkhamRealtors.com",
-        "description": "Independent directory of real estate agents and teams with a local business presence in Markham, Ontario.",
-        "inLanguage": "en-CA",
-        "publisher": { "@id": "https://markhamrealtors.com/#publisher" }
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://markhamrealtors.com/#publisher",
-        "name": "MarkhamRealtors.com",
-        "url": "https://markhamrealtors.com/",
-        "areaServed": {
-          "@type": "City",
-          "name": "Markham",
-          "containedInPlace": { "@type": "AdministrativeArea", "name": "Ontario" }
-        }
-      }
-    ]
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"MarkhamRealtors.com",
+    "url":"https://markhamrealtors.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://markhamrealtors.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
   }
   </script>
 
-  <script>
-    (async function addDirectorySchema() {
-      try {
-        const response = await fetch('/realtors.json', { cache: 'no-store' });
-        if (!response.ok) return;
-        const data = await response.json();
-        if (!Array.isArray(data.realtors) || !data.realtors.length) return;
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"MarkhamRealtors.com",
+    "url":"https://markhamrealtors.com/",
+    "logo":"https://markhamrealtors.com/favicon.ico"
+  }
+  </script>
 
-        const itemList = {
-          '@context': 'https://schema.org',
-          '@type': 'ItemList',
-          '@id': 'https://markhamrealtors.com/#rankings',
-          name: 'Best Real Estate Agents in Markham, Ontario',
-          url: 'https://markhamrealtors.com/#rankings',
-          numberOfItems: data.realtors.length,
-          itemListOrder: 'https://schema.org/ItemListOrderAscending',
-          itemListElement: data.realtors.map(function (realtor, index) {
-            return {
-              '@type': 'ListItem',
-              position: index + 1,
-              item: {
-                '@type': ['LocalBusiness', 'RealEstateAgent'],
-                name: realtor.name,
-                url: realtor.contact_link,
-                address: {
-                  '@type': 'PostalAddress',
-                  streetAddress: realtor.address,
-                  addressLocality: realtor.locality || 'Markham',
-                  addressRegion: 'ON',
-                  addressCountry: 'CA'
-                },
-                areaServed: {
-                  '@type': 'City',
-                  name: 'Markham'
-                }
-              }
-            };
-          })
-        };
-
-        const script = document.createElement('script');
-        script.type = 'application/ld+json';
-        script.id = 'directory-item-list-schema';
-        script.textContent = JSON.stringify(itemList);
-        document.head.appendChild(script);
-      } catch (error) {
-        console.warn('Structured data could not be loaded.', error);
-      }
-    }());
+  <script type="application/ld+json" id="itemListSchema">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Best Real Estate Agents in Markham",
+    "itemListOrder":"https://schema.org/ItemListOrderAscending",
+    "numberOfItems":0,
+    "itemListElement":[]
+  }
   </script>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900 antialiased">
-  <a href="#main" class="focus-ring fixed left-3 top-3 z-50 -translate-y-24 rounded-lg bg-slate-950 px-4 py-2 text-sm font-semibold text-white focus:translate-y-0">Skip to content</a>
 
-  <header class="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 sm:px-8 lg:px-10">
-      <a href="/" class="focus-ring rounded-md text-lg font-black tracking-tight text-slate-950" aria-label="MarkhamRealtors.com home">
-        Markham<span class="text-brand-600">Realtors</span>.com
-      </a>
-      <nav aria-label="Primary navigation" class="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
-        <a class="focus-ring rounded hover:text-slate-950" href="#rankings">Rankings</a>
-        <a class="focus-ring rounded hover:text-slate-950" href="#methodology">Methodology</a>
-        <a class="focus-ring rounded hover:text-slate-950" href="#map">Map</a>
-        <a class="focus-ring rounded hover:text-slate-950" href="#faq">FAQ</a>
-      </nav>
-      <a href="#rankings" class="focus-ring rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white transition hover:bg-brand-700">Compare agents</a>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="relative overflow-hidden border-b border-slate-200 bg-white">
-      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(22,166,106,0.13),transparent_32%),radial-gradient(circle_at_90%_20%,rgba(15,23,42,0.08),transparent_25%)]" aria-hidden="true"></div>
-      <div class="relative mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 sm:py-24 lg:grid-cols-[1.3fr_0.7fr] lg:px-10 lg:py-28">
-        <div>
-          <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-100 bg-brand-50 px-3 py-1 text-xs font-extrabold uppercase tracking-[0.16em] text-brand-700">
-            Markham, Ontario local directory
-          </p>
-          <h1 class="max-w-4xl text-4xl font-black tracking-[-0.04em] text-slate-950 sm:text-5xl lg:text-6xl">
-            Best Real Estate Agents in Markham
-          </h1>
-          <p class="mt-6 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
-            Compare highly rated real estate agents and teams with a verified local business presence in Markham. Our automated ranking combines review quality, review volume, local search visibility and profile completeness.
-          </p>
-          <div class="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#rankings" class="focus-ring rounded-xl bg-brand-600 px-6 py-3 text-sm font-extrabold text-white shadow-lg shadow-brand-600/20 transition hover:bg-brand-700">See the rankings</a>
-            <a href="#methodology" class="focus-ring rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-extrabold text-slate-800 transition hover:border-slate-400">How rankings work</a>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <div class="min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="#" class="flex items-center gap-3">
+          <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white shadow-lg">
+            MR
           </div>
-          <p class="mt-5 text-xs leading-5 text-slate-500">Independent editorial directory. Rankings are automated and are not paid placements.</p>
-        </div>
-
-        <aside class="glass-card self-end rounded-3xl p-6 sm:p-8" aria-label="Directory summary">
-          <p class="text-xs font-extrabold uppercase tracking-[0.16em] text-slate-500">Current directory</p>
-          <div class="mt-5 grid grid-cols-2 gap-4">
-            <div class="rounded-2xl bg-slate-950 p-5 text-white">
-              <p id="agent-count" class="text-3xl font-black">10</p>
-              <p class="mt-1 text-sm text-slate-300">ranked profiles</p>
-            </div>
-            <div class="rounded-2xl bg-brand-50 p-5">
-              <p class="text-3xl font-black text-brand-700">Weekly</p>
-              <p class="mt-1 text-sm text-brand-900">data refresh</p>
-            </div>
-          </div>
-          <dl class="mt-6 space-y-4 border-t border-slate-200 pt-6 text-sm">
-            <div class="flex items-center justify-between gap-4"><dt class="text-slate-500">Market</dt><dd class="font-bold">Markham, ON</dd></div>
-            <div class="flex items-center justify-between gap-4"><dt class="text-slate-500">Last material update</dt><dd id="updated-date" class="font-bold">Loading...</dd></div>
-            <div class="flex items-center justify-between gap-4"><dt class="text-slate-500">Method</dt><dd class="font-bold">Automated scoring</dd></div>
-          </dl>
-        </aside>
-      </div>
-    </section>
-
-    <section id="rankings" class="scroll-mt-24 py-16 sm:py-20">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div class="flex flex-col gap-6 border-b border-slate-200 pb-8 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p class="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-700">The list</p>
-            <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Top Markham real estate agents</h2>
-            <p class="mt-3 max-w-3xl leading-7 text-slate-600">Use the list as a research starting point. Interview multiple agents and independently verify licensing, experience, fees and current market activity before hiring.</p>
+            <div class="text-sm font-semibold tracking-wide text-slate-900">MarkhamRealtors.com</div>
+            <div class="text-xs text-slate-500">Top agents. Weekly updates.</div>
           </div>
-          <div class="w-full lg:max-w-sm">
-            <label for="directory-search" class="mb-2 block text-sm font-bold text-slate-700">Filter the directory</label>
-            <input id="directory-search" type="search" autocomplete="off" placeholder="Name, brokerage or specialty" class="focus-ring w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm shadow-sm placeholder:text-slate-400">
-          </div>
-        </div>
+        </a>
 
-        <div id="specialty-filters" class="mt-6 flex flex-wrap gap-2" aria-label="Specialty filters"></div>
-        <p id="results-status" class="sr-only" aria-live="polite"></p>
+        <nav class="hidden items-center gap-8 md:flex">
+          <a href="#rankings" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Rankings</a>
+          <a href="#map" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Map</a>
+          <a href="#faq" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">FAQ</a>
+          <a href="#methodology" class="text-sm font-medium text-slate-600 transition hover:text-slate-900">Methodology</a>
+        </nav>
 
-        <div id="realtor-list" class="mt-8 space-y-5" aria-live="polite" aria-busy="true">
-          <div class="glass-card animate-pulse rounded-3xl p-7">
-            <div class="h-5 w-28 rounded bg-slate-200"></div>
-            <div class="mt-5 h-8 w-2/3 rounded bg-slate-200"></div>
-            <div class="mt-4 h-4 w-1/2 rounded bg-slate-100"></div>
-          </div>
-        </div>
-        <noscript><p class="mt-6 rounded-xl border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">JavaScript is required to render the current directory data.</p></noscript>
+        <a
+          href="#rankings"
+          class="inline-flex items-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700"
+        >
+          View Top Agents
+        </a>
       </div>
-    </section>
+    </header>
 
-    <section id="methodology" class="scroll-mt-24 border-y border-slate-200 bg-white py-16 sm:py-20">
-      <div class="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-10">
-        <div>
-          <p class="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-700">Transparent methodology</p>
-          <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950">How the ranking is calculated</h2>
-          <p id="methodology-summary" class="mt-5 leading-7 text-slate-600">Loading the current methodology...</p>
-        </div>
-        <div class="grid gap-4 sm:grid-cols-2">
-          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p class="text-3xl font-black text-brand-700">60%</p>
-            <h3 class="mt-2 font-extrabold">Review quality</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Bayesian-adjusted rating helps reduce the advantage of tiny review samples.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p class="text-3xl font-black text-brand-700">25%</p>
-            <h3 class="mt-2 font-extrabold">Review volume</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Log-scaled review count rewards evidence depth without letting volume dominate.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p class="text-3xl font-black text-brand-700">10%</p>
-            <h3 class="mt-2 font-extrabold">Local visibility</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">Best observed position across Markham-focused local search queries.</p>
-          </article>
-          <article class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <p class="text-3xl font-black text-brand-700">5%</p>
-            <h3 class="mt-2 font-extrabold">Profile completeness</h3>
-            <p class="mt-2 text-sm leading-6 text-slate-600">A usable website or direct contact destination makes the listing more actionable.</p>
-          </article>
-        </div>
-      </div>
-      <div class="mx-auto mt-10 max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div class="rounded-2xl border border-slate-200 bg-slate-950 p-6 text-sm leading-6 text-slate-300">
-          <strong class="text-white">Eligibility rule:</strong> the source must show a business address in Markham, Unionville or the Markham side of Thornhill using an accepted Markham postal prefix. Generic brokerage offices without a clearly identifiable agent or team are excluded from the editorial ranking.
-        </div>
-      </div>
-    </section>
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-slate-950">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(99,102,241,0.28),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.20),_transparent_30%)]"></div>
 
-    <section id="map" class="scroll-mt-24 py-16 sm:py-20">
-      <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div class="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center">
+      <div class="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+        <div class="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
-            <p class="text-sm font-extrabold uppercase tracking-[0.14em] text-brand-700">Local context</p>
-            <h2 class="mt-2 text-3xl font-black tracking-tight text-slate-950">Explore Markham on the map</h2>
-            <p class="mt-4 leading-7 text-slate-600">The ranking requires a Markham-area business location. Use the interactive map for geographic context, then confirm the office location shown on each agent profile before contacting them.</p>
-            <a class="focus-ring mt-6 inline-flex rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-extrabold text-slate-800 hover:border-slate-400" href="https://www.openstreetmap.org/#map=11/43.88/-79.27" target="_blank" rel="noopener external">Open a larger map</a>
+            <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm text-slate-200 backdrop-blur">
+              <span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span>
+              Updated weekly for Markham, Ontario
+            </div>
+
+            <h1 class="max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Best Real Estate Agents in Markham
+            </h1>
+
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+              Discover top-performing Markham real estate agents based on review quality, review volume,
+              profile completeness and local visibility. Built for buyers, sellers, investors and families
+              moving across Markham.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a
+                href="#rankings"
+                class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-slate-900 shadow-lg transition hover:bg-slate-100"
+              >
+                Explore Rankings
+              </a>
+              <a
+                href="#methodology"
+                class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                See Methodology
+              </a>
+            </div>
+
+            <div class="mt-10 grid gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+                <div class="text-2xl font-bold text-white" id="statAgents">0</div>
+                <div class="mt-1 text-sm text-slate-300">Ranked Markham agents</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+                <div class="text-2xl font-bold text-white" id="statAvgRating">0.00</div>
+                <div class="mt-1 text-sm text-slate-300">Average rating</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur">
+                <div class="text-2xl font-bold text-white" id="statReviews">0</div>
+                <div class="mt-1 text-sm text-slate-300">Combined reviews</div>
+              </div>
+            </div>
           </div>
-          <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-900/5">
-            <iframe
-              title="Interactive map of Markham, Ontario"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-79.45%2C43.78%2C-79.15%2C44.02&amp;layer=mapnik"
-              class="h-[430px] w-full rounded-[1.15rem] border-0"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin">
-            </iframe>
+
+          <div class="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur-xl">
+            <div class="rounded-[1.5rem] bg-white p-6 shadow-2xl">
+              <div class="mb-5 flex items-center justify-between">
+                <div>
+                  <div class="text-sm font-medium text-slate-500">This week’s spotlight</div>
+                  <div class="text-xl font-bold text-slate-900">Top 3 in Markham</div>
+                </div>
+                <div class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">
+                  Fresh data
+                </div>
+              </div>
+
+              <div id="heroTopThree" class="space-y-4">
+                <div class="animate-pulse rounded-2xl bg-slate-100 p-4"></div>
+                <div class="animate-pulse rounded-2xl bg-slate-100 p-4"></div>
+                <div class="animate-pulse rounded-2xl bg-slate-100 p-4"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="scroll-mt-24 border-t border-slate-200 bg-white py-16 sm:py-20">
-      <div class="mx-auto max-w-4xl px-5 sm:px-8">
-        <p class="text-center text-sm font-extrabold uppercase tracking-[0.14em] text-brand-700">Questions</p>
-        <h2 class="mt-2 text-center text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">Markham realtor directory FAQ</h2>
-        <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
-          <details class="group py-5">
-            <summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-2 font-extrabold text-slate-900">
-              How are the best real estate agents in Markham ranked?
-              <span class="text-2xl font-normal text-brand-600 transition group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="pr-10 pt-2 leading-7 text-slate-600">The automated score combines Bayesian-adjusted review quality, log-scaled review volume, observed local-search visibility and profile completeness. The same formula is applied to every eligible profile.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-2 font-extrabold text-slate-900">
-              Can an agent pay to move higher in the ranking?
-              <span class="text-2xl font-normal text-brand-600 transition group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="pr-10 pt-2 leading-7 text-slate-600">No. The editorial ranking score does not include advertising or referral payments. Any future commercial relationship will be clearly labelled and kept separate from the scoring formula.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-2 font-extrabold text-slate-900">
-              What does Markham-based mean here?
-              <span class="text-2xl font-normal text-brand-600 transition group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="pr-10 pt-2 leading-7 text-slate-600">The data source must return a public business address within accepted Markham-area postal prefixes, including Markham, Unionville and the Markham side of Thornhill. It refers to the public business location, not necessarily the brokerage head office.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-2 font-extrabold text-slate-900">
-              Are ratings and review counts guaranteed to be accurate?
-              <span class="text-2xl font-normal text-brand-600 transition group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="pr-10 pt-2 leading-7 text-slate-600">No. Public business data can change between refreshes or contain errors. Treat ratings as one comparison signal and verify current information directly before making a hiring decision.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="focus-ring flex cursor-pointer list-none items-center justify-between gap-4 rounded-lg py-2 font-extrabold text-slate-900">
-              How often is the directory refreshed?
-              <span class="text-2xl font-normal text-brand-600 transition group-open:rotate-45" aria-hidden="true">+</span>
-            </summary>
-            <p class="pr-10 pt-2 leading-7 text-slate-600">The data pipeline runs every Sunday at 00:00 UTC. A new deployment occurs only when the underlying directory data materially changes.</p>
-          </details>
+    <!-- Trust / quick info -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl gap-4 px-4 py-6 sm:px-6 md:grid-cols-3 lg:px-8">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="text-sm font-semibold text-slate-900">Local focus</div>
+          <p class="mt-1 text-sm text-slate-600">Profiles are filtered for agents physically located in Markham or serving the local area.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="text-sm font-semibold text-slate-900">Weekly refresh</div>
+          <p class="mt-1 text-sm text-slate-600">The directory is updated on a recurring schedule so rankings stay current.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="text-sm font-semibold text-slate-900">Transparent methodology</div>
+          <p class="mt-1 text-sm text-slate-600">Rankings consider rating quality, review count, visibility and overall profile completeness.</p>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="border-t border-slate-800 bg-slate-950 text-slate-300">
-    <div class="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-10">
-      <div class="grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-        <div>
-          <p class="text-lg font-black text-white">Markham<span class="text-brand-500">Realtors</span>.com</p>
-          <p class="mt-3 max-w-sm text-sm leading-6 text-slate-400">An independent research directory for consumers comparing real estate professionals in Markham, Ontario.</p>
+    <main>
+      <!-- Rankings -->
+      <section id="rankings" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="mb-10 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Directory</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+              Top Markham Realtors
+            </h2>
+            <p class="mt-3 max-w-2xl text-base leading-7 text-slate-600">
+              Browse the current list of top agents in Markham. Search by name, brokerage or specialty.
+            </p>
+          </div>
+
+          <div class="flex w-full flex-col gap-3 sm:flex-row lg:max-w-2xl">
+            <div class="relative flex-1">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search by name, brokerage or specialty..."
+                class="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm outline-none ring-0 transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"
+              />
+            </div>
+
+            <select
+              id="specialtyFilter"
+              class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm shadow-sm outline-none transition focus:border-sky-400 focus:ring-4 focus:ring-sky-100"
+            >
+              <option value="all">All specialties</option>
+            </select>
+          </div>
         </div>
-        <div class="text-xs leading-6 text-slate-400">
-          <p><strong class="text-slate-200">Disclosure:</strong> Rankings are automated editorial scores based on public business-location, review and search-visibility signals supplied by a third-party data provider. They are not endorsements, guarantees of service quality or legal, financial or real estate advice. Public data may be incomplete or inaccurate.</p>
-          <p class="mt-3">MarkhamRealtors.com is not affiliated with RECO, TRREB, CREA or any business listed on this page. Licensing status and disciplinary history should be independently verified with the appropriate regulator before retaining a real estate professional. REALTOR&reg; is a registered trademark controlled by the Canadian Real Estate Association and identifies real estate professionals who are members of CREA.</p>
+
+        <div id="activeFilters" class="mb-6 flex flex-wrap gap-2"></div>
+
+        <div class="grid gap-6 xl:grid-cols-[1fr_330px]">
+          <div>
+            <div id="realtorList" class="grid gap-6 md:grid-cols-2 xl:grid-cols-2"></div>
+
+            <div id="emptyState" class="hidden rounded-3xl border border-dashed border-slate-300 bg-white p-12 text-center shadow-sm">
+              <div class="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-full bg-slate-100 text-2xl">
+                🔍
+              </div>
+              <h3 class="text-lg font-semibold text-slate-900">No matching realtors found</h3>
+              <p class="mt-2 text-sm text-slate-600">Try a different keyword or clear the current filter.</p>
+            </div>
+          </div>
+
+          <!-- Sidebar -->
+          <aside class="space-y-6">
+            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="mb-3 flex items-center justify-between">
+                <h3 class="text-lg font-bold text-slate-900">Quick filters</h3>
+                <button id="clearFiltersBtn" class="text-sm font-semibold text-sky-700 hover:text-sky-900">
+                  Clear
+                </button>
+              </div>
+              <div id="quickFilterChips" class="flex flex-wrap gap-2"></div>
+            </div>
+
+            <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-bold text-slate-900">Why people use this site</h3>
+              <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                <li class="flex gap-3">
+                  <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                  <span>Fast comparison of local Markham agents</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                  <span>Clear specialties like luxury, condos and first-time buyers</span>
+                </li>
+                <li class="flex gap-3">
+                  <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                  <span>Useful contact links and brokerage info in one place</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Map section -->
+      <section id="map" class="bg-slate-900 py-16 text-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-300">Location coverage</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Serving Markham and surrounding communities</h2>
+            <p class="mt-3 text-slate-300">
+              This directory focuses on Markham and key surrounding communities such as Unionville, Cornell,
+              Wismer, Berczy, Greensborough and Thornhill-Markham.
+            </p>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+            <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl">
+              <div class="flex h-[420px] items-center justify-center bg-[linear-gradient(135deg,rgba(14,165,233,0.22),rgba(99,102,241,0.22))] p-8">
+                <div class="w-full rounded-[1.5rem] border border-white/15 bg-slate-950/40 p-10 text-center backdrop-blur">
+                  <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-3xl">
+                    📍
+                  </div>
+                  <h3 class="text-2xl font-bold">Interactive Map Placeholder</h3>
+                  <p class="mx-auto mt-3 max-w-xl text-sm leading-7 text-slate-300">
+                    You can later replace this section with a real interactive map using Google Maps, Mapbox or Leaflet.
+                    For now, it acts as a premium visual section and location trust signal.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-lg font-bold">Key communities</h3>
+                <div class="mt-4 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Unionville</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Cornell</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Wismer</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Berczy</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Greensborough</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Box Grove</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Markham Village</span>
+                  <span class="rounded-full bg-white/10 px-3 py-2 text-sm">Thornhill</span>
+                </div>
+              </div>
+
+              <div class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-lg font-bold">Best for</h3>
+                <ul class="mt-4 space-y-3 text-sm text-slate-300">
+                  <li>• First-time buyers</li>
+                  <li>• Upsizers and move-up families</li>
+                  <li>• Downsizers and seniors</li>
+                  <li>• Condo buyers and sellers</li>
+                  <li>• Luxury home searchers</li>
+                  <li>• Investors and relocation clients</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Methodology -->
+      <section id="methodology" class="bg-white py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Methodology</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">How the rankings are calculated</h2>
+            <p class="mt-3 text-slate-600">
+              Rankings are editorial and data-driven. They are intended to help users compare local options quickly.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="text-sm font-semibold text-sky-700">01</div>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">Review quality</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">Average rating is one of the strongest ranking signals.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="text-sm font-semibold text-sky-700">02</div>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">Review volume</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">More reviews generally increase confidence and ranking strength.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="text-sm font-semibold text-sky-700">03</div>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">Local visibility</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">Profiles with stronger local presence may score better.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+              <div class="text-sm font-semibold text-sky-700">04</div>
+              <h3 class="mt-3 text-lg font-bold text-slate-900">Profile completeness</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-600">Clear specialties, brokerage info and contact options improve usability.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="bg-slate-50 py-16">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">FAQ</p>
+            <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Frequently asked questions</h2>
+          </div>
+
+          <div class="space-y-4" id="faqAccordion">
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
+                How often is this directory updated?
+                <span class="ml-4 text-slate-400 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-slate-600">
+                The realtor list is designed to update on a weekly schedule so new data can be reflected on the site.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
+                Are these official rankings?
+                <span class="ml-4 text-slate-400 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-slate-600">
+                No. These are editorial rankings intended to help consumers compare real estate agents in Markham.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
+                What factors affect ranking?
+                <span class="ml-4 text-slate-400 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-slate-600">
+                Rankings may consider rating quality, review volume, local visibility and profile completeness.
+              </p>
+            </details>
+
+            <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <summary class="flex cursor-pointer list-none items-center justify-between text-lg font-semibold text-slate-900">
+                Do I contact agents through this site?
+                <span class="ml-4 text-slate-400 transition group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-sm leading-7 text-slate-600">
+                Contact links typically point directly to the agent’s own site or profile, so users can reach them easily.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <div class="flex items-center gap-3">
+              <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">
+                MR
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">MarkhamRealtors.com</div>
+                <div class="text-xs text-slate-500">Modern local realtor directory</div>
+              </div>
+            </div>
+
+            <p class="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+              MarkhamRealtors.com is an independent directory designed to help users discover and compare
+              real estate professionals in Markham, Ontario.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-amber-200 bg-amber-50 p-6">
+            <h3 class="text-sm font-bold uppercase tracking-wide text-amber-900">Legal disclosure</h3>
+            <p class="mt-3 text-sm leading-7 text-amber-900/80">
+              Rankings on this site are editorial and algorithmic estimates based on available data.
+              They are not official rankings from CREA, TRREB, RECO, any brokerage or any government body.
+              Users should independently verify credentials, reviews and fit before choosing an agent.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© <span id="year"></span> MarkhamRealtors.com. All rights reserved.</p>
+          <div class="flex gap-5">
+            <a href="#methodology" class="hover:text-slate-700">Methodology</a>
+            <a href="#faq" class="hover:text-slate-700">FAQ</a>
+            <a href="#rankings" class="hover:text-slate-700">Top Agents</a>
+          </div>
         </div>
       </div>
-      <div class="mt-10 flex flex-col gap-3 border-t border-slate-800 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-        <p>&copy; <span id="copyright-year"></span> MarkhamRealtors.com</p>
-        <a href="#methodology" class="focus-ring rounded hover:text-slate-300">Ranking methodology</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script>
-    (function () {
-      const list = document.getElementById('realtor-list');
-      const searchInput = document.getElementById('directory-search');
-      const filterWrap = document.getElementById('specialty-filters');
-      const resultsStatus = document.getElementById('results-status');
-      const updatedDate = document.getElementById('updated-date');
-      const methodologySummary = document.getElementById('methodology-summary');
-      const agentCount = document.getElementById('agent-count');
-      document.getElementById('copyright-year').textContent = String(new Date().getFullYear());
+    const realtorListEl = document.getElementById('realtorList');
+    const heroTopThreeEl = document.getElementById('heroTopThree');
+    const specialtyFilterEl = document.getElementById('specialtyFilter');
+    const searchInputEl = document.getElementById('searchInput');
+    const emptyStateEl = document.getElementById('emptyState');
+    const activeFiltersEl = document.getElementById('activeFilters');
+    const quickFilterChipsEl = document.getElementById('quickFilterChips');
+    const clearFiltersBtn = document.getElementById('clearFiltersBtn');
 
-      let allRealtors = [];
-      let activeSpecialty = 'All';
+    const statAgentsEl = document.getElementById('statAgents');
+    const statAvgRatingEl = document.getElementById('statAvgRating');
+    const statReviewsEl = document.getElementById('statReviews');
 
-      function node(tag, className, text) {
-        const element = document.createElement(tag);
-        if (className) element.className = className;
-        if (typeof text === 'string') element.textContent = text;
-        return element;
+    let allRealtors = [];
+    let currentSearch = '';
+    let currentSpecialty = 'all';
+
+    function escapeHtml(str = '') {
+      return String(str)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#039;');
+    }
+
+    function numberFormat(value) {
+      return new Intl.NumberFormat('en-CA').format(value || 0);
+    }
+
+    function renderStars(rating = 0) {
+      const fullStars = Math.round(rating);
+      return Array.from({ length: 5 }, (_, i) => `
+        <svg class="h-4 w-4 ${i < fullStars ? 'text-amber-400' : 'text-slate-300'}" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.922-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.196-1.539-1.118l1.07-3.292a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81H7.03a1 1 0 0 0 .95-.69l1.07-3.292Z"/>
+        </svg>
+      `).join('');
+    }
+
+    function realtorCard(realtor, index) {
+      const specialties = (realtor.specialties || []).map(s => `
+        <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700">${escapeHtml(s)}</span>
+      `).join('');
+
+      const featuredClass =
+        realtor.rank === 1
+          ? 'ring-2 ring-amber-300 border-amber-200 bg-gradient-to-br from-amber-50 to-white'
+          : realtor.rank === 2
+          ? 'ring-2 ring-slate-300 border-slate-200 bg-gradient-to-br from-slate-50 to-white'
+          : realtor.rank === 3
+          ? 'ring-2 ring-orange-200 border-orange-200 bg-gradient-to-br from-orange-50 to-white'
+          : 'border-slate-200 bg-white';
+
+      const badge =
+        realtor.rank === 1
+          ? '<span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-bold text-amber-800">#1 Top Ranked</span>'
+          : realtor.rank === 2
+          ? '<span class="rounded-full bg-slate-200 px-3 py-1 text-xs font-bold text-slate-700">#2 Featured</span>'
+          : realtor.rank === 3
+          ? '<span class="rounded-full bg-orange-100 px-3 py-1 text-xs font-bold text-orange-800">#3 Featured</span>'
+          : '<span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700">Ranked Profile</span>';
+
+      return `
+        <article class="group rounded-[2rem] border p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl ${featuredClass}">
+          <div class="mb-5 flex items-start justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-900 text-lg font-bold text-white shadow-lg">
+                ${realtor.rank}
+              </div>
+              <div>
+                <div class="mb-2">${badge}</div>
+                <h3 class="text-xl font-bold tracking-tight text-slate-900">${escapeHtml(realtor.name)}</h3>
+                <p class="mt-1 text-sm text-slate-500">${escapeHtml(realtor.brokerage || 'Brokerage not listed')}</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid gap-4 rounded-2xl bg-slate-50 p-4 sm:grid-cols-3">
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Rating</div>
+              <div class="mt-1 flex items-center gap-2">
+                <span class="text-lg font-bold text-slate-900">${Number(realtor.rating || 0).toFixed(2)}</span>
+                <div class="flex">${renderStars(realtor.rating)}</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Reviews</div>
+              <div class="mt-1 text-lg font-bold text-slate-900">${numberFormat(realtor.review_count)}</div>
+            </div>
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Score</div>
+              <div class="mt-1 text-lg font-bold text-slate-900">${Number(realtor.score || 0).toFixed(1)}</div>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Specialties</div>
+            <div class="mt-3 flex flex-wrap gap-2">${specialties || '<span class="text-sm text-slate-500">No specialties listed</span>'}</div>
+          </div>
+
+          <div class="mt-5">
+            <div class="text-xs font-semibold uppercase tracking-wide text-slate-500">Location</div>
+            <p class="mt-2 text-sm text-slate-600">${escapeHtml(realtor.address || 'Markham, Ontario')}</p>
+          </div>
+
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="${escapeHtml(realtor.contact_url || '#')}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
+            >
+              Contact Agent
+            </a>
+            <button
+              class="copy-link-btn inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50"
+              data-url="${escapeHtml(realtor.contact_url || '')}"
+              type="button"
+            >
+              Copy Link
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderHeroTopThree(realtors) {
+      const topThree = realtors.slice(0, 3);
+      heroTopThreeEl.innerHTML = topThree.map((r) => `
+        <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 p-4">
+          <div class="flex items-center gap-4">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-sm font-bold text-white">
+              ${r.rank}
+            </div>
+            <div>
+              <div class="font-semibold text-slate-900">${escapeHtml(r.name)}</div>
+              <div class="text-sm text-slate-500">${escapeHtml(r.brokerage || '')}</div>
+            </div>
+          </div>
+          <div class="text-right">
+            <div class="text-sm font-semibold text-slate-900">${Number(r.rating || 0).toFixed(2)} ★</div>
+            <div class="text-xs text-slate-500">${numberFormat(r.review_count)} reviews</div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderSpecialtyOptions(realtors) {
+      const specialties = [...new Set(
+        realtors.flatMap(r => Array.isArray(r.specialties) ? r.specialties : [])
+      )].sort((a, b) => a.localeCompare(b));
+
+      specialtyFilterEl.innerHTML = `
+        <option value="all">All specialties</option>
+        ${specialties.map(s => `<option value="${escapeHtml(s)}">${escapeHtml(s)}</option>`).join('')}
+      `;
+
+      quickFilterChipsEl.innerHTML = specialties.slice(0, 10).map(s => `
+        <button
+          type="button"
+          class="quick-chip rounded-full border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-300 hover:bg-sky-50 hover:text-sky-700"
+          data-specialty="${escapeHtml(s)}"
+        >
+          ${escapeHtml(s)}
+        </button>
+      `).join('');
+    }
+
+    function renderActiveFilters() {
+      const chips = [];
+
+      if (currentSearch.trim()) {
+        chips.push(`
+          <span class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-3 py-2 text-sm font-medium text-white">
+            Search: ${escapeHtml(currentSearch)}
+          </span>
+        `);
       }
 
-      function safeExternalLink(url) {
-        try {
-          const parsed = new URL(url, window.location.origin);
-          return parsed.protocol === 'https:' ? parsed.href : '#';
-        } catch (error) {
-          return '#';
-        }
+      if (currentSpecialty !== 'all') {
+        chips.push(`
+          <span class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-2 text-sm font-medium text-sky-800">
+            Specialty: ${escapeHtml(currentSpecialty)}
+          </span>
+        `);
       }
 
-      function formatDate(isoDate) {
-        if (!isoDate) return 'Not available';
-        const date = new Date(isoDate + 'T12:00:00');
-        return new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'short', day: 'numeric' }).format(date);
+      activeFiltersEl.innerHTML = chips.join('');
+    }
+
+    function updateStats(realtors) {
+      statAgentsEl.textContent = numberFormat(realtors.length);
+
+      const avgRating = realtors.length
+        ? realtors.reduce((sum, r) => sum + Number(r.rating || 0), 0) / realtors.length
+        : 0;
+
+      const totalReviews = realtors.reduce((sum, r) => sum + Number(r.review_count || 0), 0);
+
+      statAvgRatingEl.textContent = avgRating.toFixed(2);
+      statReviewsEl.textContent = numberFormat(totalReviews);
+    }
+
+    function filterRealtors() {
+      const search = currentSearch.trim().toLowerCase();
+
+      const filtered = allRealtors.filter((r) => {
+        const haystack = [
+          r.name || '',
+          r.brokerage || '',
+          r.address || '',
+          ...(r.specialties || [])
+        ].join(' ').toLowerCase();
+
+        const matchesSearch = !search || haystack.includes(search);
+        const matchesSpecialty =
+          currentSpecialty === 'all' ||
+          (r.specialties || []).some((s) => s.toLowerCase() === currentSpecialty.toLowerCase());
+
+        return matchesSearch && matchesSpecialty;
+      });
+
+      renderRealtors(filtered);
+      renderActiveFilters();
+    }
+
+    function renderRealtors(realtors) {
+      if (!realtors.length) {
+        realtorListEl.innerHTML = '';
+        emptyStateEl.classList.remove('hidden');
+        return;
       }
 
-      function renderCard(realtor) {
-        const article = node('article', 'glass-card grid gap-6 rounded-3xl p-6 sm:p-8 lg:grid-cols-[auto_1fr_auto] lg:items-center');
-        article.id = 'realtor-' + String(realtor.rank);
+      emptyStateEl.classList.add('hidden');
+      realtorListEl.innerHTML = realtors.map(realtorCard).join('');
 
-        const rank = node('div', 'flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-slate-950 text-xl font-black text-white', '#' + String(realtor.rank));
-        article.appendChild(rank);
-
-        const main = node('div', 'min-w-0');
-        const heading = node('h3', 'text-2xl font-black tracking-tight text-slate-950', realtor.name);
-        main.appendChild(heading);
-
-        const brokerage = node('p', 'mt-1 text-sm font-semibold text-slate-500', realtor.brokerage);
-        main.appendChild(brokerage);
-
-        const stats = node('div', 'mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm');
-        const rating = node('span', 'font-extrabold text-slate-900', String(realtor.rating.toFixed(1)) + ' / 5 rating');
-        const reviews = node('span', 'text-slate-500', new Intl.NumberFormat('en-CA').format(realtor.review_count) + ' public reviews');
-        const score = node('span', 'rounded-full bg-brand-50 px-2.5 py-1 font-extrabold text-brand-700', 'Score ' + realtor.score.toFixed(1));
-        stats.append(rating, reviews, score);
-        main.appendChild(stats);
-
-        const address = node('p', 'mt-4 text-sm leading-6 text-slate-600', realtor.address);
-        main.appendChild(address);
-
-        const specialtyWrap = node('div', 'mt-4 flex flex-wrap gap-2');
-        realtor.specialties.forEach(function (specialty) {
-          specialtyWrap.appendChild(node('span', 'rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-bold text-slate-600', specialty));
+      document.querySelectorAll('.copy-link-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const url = btn.getAttribute('data-url');
+          if (!url) return;
+          try {
+            await navigator.clipboard.writeText(url);
+            const original = btn.textContent;
+            btn.textContent = 'Copied!';
+            setTimeout(() => btn.textContent = original, 1400);
+          } catch {
+            alert('Unable to copy the link.');
+          }
         });
-        main.appendChild(specialtyWrap);
-        article.appendChild(main);
+      });
+    }
 
-        const action = node('div', 'lg:text-right');
-        const link = node('a', 'focus-ring inline-flex w-full items-center justify-center rounded-xl bg-brand-600 px-5 py-3 text-sm font-extrabold text-white transition hover:bg-brand-700 lg:w-auto', 'View contact details');
-        link.href = safeExternalLink(realtor.contact_link);
-        link.target = '_blank';
-        link.rel = 'noopener external';
-        link.setAttribute('aria-label', 'View contact details for ' + realtor.name);
-        action.appendChild(link);
-        const source = node('p', 'mt-2 text-xs text-slate-400', realtor.rating_source || 'Public business data');
-        action.appendChild(source);
-        article.appendChild(action);
+    async function loadRealtors() {
+      try {
+        const response = await fetch('./realtors.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Could not load realtors.json');
 
-        return article;
-      }
+        const payload = await response.json();
+        const realtors = Array.isArray(payload) ? payload : (payload.realtors || []);
 
-      function currentResults() {
-        const query = searchInput.value.trim().toLowerCase();
-        return allRealtors.filter(function (realtor) {
-          const haystack = [realtor.name, realtor.brokerage, realtor.address].concat(realtor.specialties).join(' ').toLowerCase();
-          const matchesText = !query || haystack.includes(query);
-          const matchesSpecialty = activeSpecialty === 'All' || realtor.specialties.includes(activeSpecialty);
-          return matchesText && matchesSpecialty;
+        allRealtors = realtors.sort((a, b) => Number(a.rank || 0) - Number(b.rank || 0));
+
+        updateStats(allRealtors);
+        renderHeroTopThree(allRealtors);
+        renderSpecialtyOptions(allRealtors);
+        renderRealtors(allRealtors);
+        updateItemListSchema(allRealtors);
+
+        specialtyFilterEl.addEventListener('change', (e) => {
+          currentSpecialty = e.target.value;
+          filterRealtors();
         });
-      }
 
-      function renderList() {
-        const results = currentResults();
-        list.replaceChildren();
-        list.setAttribute('aria-busy', 'false');
-        resultsStatus.textContent = String(results.length) + ' directory results shown.';
+        searchInputEl.addEventListener('input', (e) => {
+          currentSearch = e.target.value;
+          filterRealtors();
+        });
 
-        if (!results.length) {
-          const empty = node('div', 'rounded-2xl border border-slate-200 bg-white p-8 text-center text-slate-600', 'No profiles match that filter.');
-          list.appendChild(empty);
-          return;
-        }
+        clearFiltersBtn.addEventListener('click', () => {
+          currentSearch = '';
+          currentSpecialty = 'all';
+          searchInputEl.value = '';
+          specialtyFilterEl.value = 'all';
+          filterRealtors();
+        });
 
-        const fragment = document.createDocumentFragment();
-        results.forEach(function (realtor) { fragment.appendChild(renderCard(realtor)); });
-        list.appendChild(fragment);
-      }
-
-      function renderFilters() {
-        const specialties = Array.from(new Set(allRealtors.flatMap(function (realtor) { return realtor.specialties; })))
-          .filter(function (value) { return value !== 'Markham'; })
-          .sort()
-          .slice(0, 8);
-        ['All'].concat(specialties).forEach(function (specialty) {
-          const button = node('button', specialty === 'All'
-            ? 'focus-ring rounded-full bg-slate-950 px-4 py-2 text-xs font-extrabold text-white'
-            : 'focus-ring rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-extrabold text-slate-600 hover:border-slate-400', specialty);
-          button.type = 'button';
-          button.dataset.specialty = specialty;
-          button.addEventListener('click', function () {
-            activeSpecialty = specialty;
-            Array.from(filterWrap.querySelectorAll('button')).forEach(function (candidate) {
-              const active = candidate.dataset.specialty === activeSpecialty;
-              candidate.className = active
-                ? 'focus-ring rounded-full bg-slate-950 px-4 py-2 text-xs font-extrabold text-white'
-                : 'focus-ring rounded-full border border-slate-300 bg-white px-4 py-2 text-xs font-extrabold text-slate-600 hover:border-slate-400';
-            });
-            renderList();
+        document.querySelectorAll('.quick-chip').forEach((chip) => {
+          chip.addEventListener('click', () => {
+            currentSpecialty = chip.getAttribute('data-specialty') || 'all';
+            specialtyFilterEl.value = currentSpecialty;
+            filterRealtors();
           });
-          filterWrap.appendChild(button);
         });
+      } catch (error) {
+        realtorListEl.innerHTML = `
+          <div class="rounded-3xl border border-rose-200 bg-rose-50 p-6 text-rose-800">
+            <h3 class="text-lg font-semibold">Unable to load directory data</h3>
+            <p class="mt-2 text-sm">Please make sure <code>realtors.json</code> is present and correctly formatted.</p>
+          </div>
+        `;
+        console.error(error);
       }
+    }
 
-      async function loadDirectory() {
-        try {
-          const response = await fetch('/realtors.json', { cache: 'no-store' });
-          if (!response.ok) throw new Error('HTTP ' + String(response.status));
-          const payload = await response.json();
-          if (!Array.isArray(payload.realtors)) throw new Error('Invalid data shape');
+    function updateItemListSchema(realtors) {
+      const script = document.getElementById('itemListSchema');
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Best Real Estate Agents in Markham",
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "numberOfItems": realtors.length,
+        "itemListElement": realtors.map((r) => ({
+          "@type": "ListItem",
+          "position": r.rank,
+          "item": {
+            "@type": ["RealEstateAgent", "LocalBusiness"],
+            "name": r.name,
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Markham",
+              "addressRegion": "ON",
+              "addressCountry": "CA"
+            },
+            "url": r.contact_url || "https://markhamrealtors.com/",
+            "areaServed": "Markham, Ontario",
+            "brand": r.brokerage || undefined
+          }
+        }))
+      };
+      script.textContent = JSON.stringify(schema, null, 2);
+    }
 
-          allRealtors = payload.realtors;
-          agentCount.textContent = String(allRealtors.length);
-          updatedDate.textContent = formatDate(payload.updated_at);
-          methodologySummary.textContent = payload.methodology && payload.methodology.summary
-            ? payload.methodology.summary
-            : 'The same automated scoring model is applied to each eligible Markham profile.';
-          renderFilters();
-          renderList();
-        } catch (error) {
-          console.error(error);
-          list.replaceChildren(node('div', 'rounded-2xl border border-red-200 bg-red-50 p-6 text-sm leading-6 text-red-900', 'The directory data could not be loaded. Please refresh the page or try again shortly.'));
-          list.setAttribute('aria-busy', 'false');
-        }
-      }
-
-      searchInput.addEventListener('input', renderList);
-      loadDirectory();
-    }());
+    document.getElementById('year').textContent = new Date().getFullYear();
+    loadRealtors();
   </script>
 </body>
 </html>
